@@ -12,6 +12,8 @@ int main(){
             }
             if (jump == 1){ //Check if moving to next row is possible
                 if (((x == j)||(x == j-1))&&(temp ==0)){
+                    x = j;
+                    y = i;
                     jump=0;
                     continue;
                 }
